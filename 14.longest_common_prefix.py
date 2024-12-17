@@ -16,11 +16,10 @@ from typing import List
 
 def allStartsWith(strs, str):
     r = set()
-    try:
-        for x in strs:
-            r.add(x.index(str))
-    except ValueError:
-        return False
+    for x in strs:
+        if str not in x:
+            return False
+        r.add(x.index(str))
     return len(r) == 1
 
 
