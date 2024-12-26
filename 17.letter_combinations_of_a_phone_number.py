@@ -21,11 +21,26 @@ d = {
 
 class Solution:
     def letterCombinations(self, digits: str) -> List[str]:
-        r = []
-        # e.g. digits: "23" -> input: ["abc", "def"]
-        input = [d[digit] for digit in digits]
+        if len(digits) == 0:
+            return []
 
-        # start: index for input
+        r = []
+        # e.g. digits: "23" -> m: ["abc", "def"]
+        m = [d[digit] for digit in digits]
+        sol = []
+
+        # ref: https://youtu.be/F7EoBxhPmBk?si=IEkoDAc5_MuGNIZu
+        def backtrack2(i):
+            if i >= len(digits):
+                r.append("".join(sol))
+                return
+
+            for d in m[i]:
+                sol.append(d)
+                backtrack2(i + 1)
+                sol.pop()
+
+        # start: index for m
         def backtrack(path, start):
             # base case
             if len(path) == len(digits):
@@ -35,20 +50,21 @@ class Solution:
                 return
 
             # for-loop based backtracking
-            for i in range(len(input[start])):
-                path.append(input[start][i])
+            for i in range(len(m[start])):
+                path.append(m[start][i])
                 backtrack(path[:], start + 1)
                 path.pop()
 
-        backtrack([], 0)
+        # backtrack([], 0)
+        backtrack2(0)
 
         return r
 
 
 s = Solution()
-# print(s.letterCombinations("23"))
+print(s.letterCombinations("23"))
 # print(s.letterCombinations(""))
 # print(s.letterCombinations("2"))
 # print(s.letterCombinations("234"))
 # print(s.letterCombinations("7"))
-print(s.letterCombinations("5678"))
+# print(s.letterCombinations("5678"))
