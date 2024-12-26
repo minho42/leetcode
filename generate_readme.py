@@ -29,4 +29,4 @@ with open(output_file, "w") as f:
     f.write(f"{len(unique_problem_numbers)} solved\n\n")
     for problem, languages in sorted_problems:
         lang_list = ", ".join(sorted(languages))
-        f.write(f"- {problem} [{lang_list}]\n")
+        f.write(f"{problem} [{lang_list}]  \n")
