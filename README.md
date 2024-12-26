@@ -1,0 +1,16 @@
+14 solved
+
+- 1.two_sum [go, py]
+- 2.add_two_numbers [py]
+- 7.reverse_integer [py]
+- 9.palindrome_number [py]
+- 11.container_with_most_water [py]
+- 13.roman_to_integer [py]
+- 14.longest_common_prefix [py]
+- 20.valid_parentheses [go, py]
+- 22.generate_parentheses [go, js, py]
+- 32.longest_valid_parentheses [go, py]
+- 41.first_missing_positive [py]
+- 43.multiply_strings [py]
+- 50.pow(x,n) [py]
+- 78.subsets [go, js, py]
