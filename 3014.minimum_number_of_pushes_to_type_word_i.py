@@ -3,10 +3,7 @@
 
 class Solution:
     def minimumPushes(self, word: str) -> int:
-        cost = 0
-
         s = set(sorted(word, key=lambda k: word.count(k), reverse=True))
-        print(s)
 
         d = {}
         level = 0
@@ -15,11 +12,7 @@ class Solution:
                 level += 1
             d[w] = level
 
-        print(d)
-        for w in word:
-            cost += d[w]
-
-        return cost
+        return sum(d.values())
 
 
 s = Solution()
