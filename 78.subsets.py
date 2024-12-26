@@ -10,6 +10,21 @@ from typing import List
 
 
 class Solution:
+    # for-loop based backtracking
+    def subsets2(self, nums: List[int]) -> List[List[int]]:
+        r = []
+
+        def backtrack(start, path):
+            r.append(path[:])
+            for i in range(start, len(nums)):
+                path.append(nums[i])
+                backtrack(i + 1, path)
+                path.pop()
+
+        backtrack(0, [])
+        return r
+
+    # binary decision tree
     def subsets(self, nums: List[int]) -> List[List[int]]:
         r = []
         sol = []
@@ -34,3 +49,4 @@ class Solution:
 
 s = Solution()
 print(s.subsets([1, 2, 3]))
+print(s.subsets2([1, 2, 3]))
