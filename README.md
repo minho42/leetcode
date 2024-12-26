@@ -7,7 +7,7 @@
 - 11.container_with_most_water [py]
 - 13.roman_to_integer [py]
 - 14.longest_common_prefix [py]
-- 17.letter_combinations_of_a_phone_number [py]
+- 17.letter_combinations_of_a_phone_number [js, py]
 - 20.valid_parentheses [go, py]
 - 22.generate_parentheses [go, js, py]
 - 32.longest_valid_parentheses [go, py]
