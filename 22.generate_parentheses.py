@@ -12,8 +12,8 @@ class Solution:
         r = []
 
         # binary decision tree backtracking
-        # lc: "{" count
-        # rc: "}" count
+        # lc: "(" count
+        # rc: ")" count
         def backtrack(path: List[str], lc, rc):
             # base cases
             if rc > lc:
