@@ -28,9 +28,12 @@ class Solution:
             "m0",
         ]
 
-        def convert_to_time_str(arr):
-            # h0 => 2 ** 0 => 1
-            # m1 => 2 ** 1 => 2
+        def convert_to_time_str(arr: List[str]) -> str | None:
+            # arr: ["h0", "m1"]
+            # "h0" => "1:00" (2 ** 0 => 1)
+            # "m1" => "0:02" (2 ** 1 => 2)
+            # return "1:02"
+
             if len(arr) != turnedOn:
                 return None
             h = 0
@@ -66,7 +69,7 @@ class Solution:
 
 
 s = Solution()
-# print(s.readBinaryWatch(1))
-# print(s.readBinaryWatch(2))
+print(s.readBinaryWatch(1))
+print(s.readBinaryWatch(2))
 print(s.readBinaryWatch(8))
-# print(s.readBinaryWatch(9))
+print(s.readBinaryWatch(9))
