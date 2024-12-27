@@ -8,6 +8,11 @@
 
 from typing import List
 
+# Topics
+# Array
+# Backtracking
+# Bit Manipulation
+
 
 class Solution:
     # for-loop based backtracking

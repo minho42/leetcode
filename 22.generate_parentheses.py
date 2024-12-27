@@ -6,6 +6,11 @@ from typing import List
 # Input: n = 3
 # Output: ["((()))","(()())","(())()","()(())","()()()"]
 
+# Topics
+# String
+# Dynamic Programming
+# Backtracking
+
 
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:

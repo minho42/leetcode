@@ -17,6 +17,11 @@
 
 # ref: https://youtu.be/r0-zx5ejdq0?si=l18n5DzhEXdNNiac
 
+# Topics
+# String
+# Dynamic Programming
+# Stack
+
 
 class Solution:
     def longestValidParentheses(self, s: str) -> int:

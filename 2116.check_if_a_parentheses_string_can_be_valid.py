@@ -1,6 +1,12 @@
 # https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/description/
 
 
+# Topics
+# String
+# Stack
+# Greedy
+
+
 def isvalid_right_to_left(s, locked):
     luc, ruc = 0, 0
     llc, rlc = 0, 0

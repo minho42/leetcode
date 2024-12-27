@@ -1,5 +1,8 @@
 # https://leetcode.com/problems/palindrome-number/
 
+# Topics
+# Math
+
 
 class Solution:
     def isPalindrome(self, x: int) -> bool:

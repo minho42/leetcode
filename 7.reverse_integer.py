@@ -12,6 +12,9 @@
 # Input: x = 120
 # Output: 21
 
+# Topics
+# Math
+
 
 class Solution:
     def reverse(self, x: int) -> int:

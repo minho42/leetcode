@@ -6,6 +6,11 @@ from typing import List
 # Input: digits = "23"
 # Output: ["ad","ae","af","bd","be","bf","cd","ce","cf"]
 
+# Topics
+# Hash Table
+# String
+# Backtracking
+
 
 d = {
     "2": "abc",

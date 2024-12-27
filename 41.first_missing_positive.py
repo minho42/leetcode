@@ -18,6 +18,10 @@
 
 from typing import List
 
+# Topics
+# Array
+# Hash Table
+
 
 def firstMissingPositive(nums: List[int]) -> int:
     d = {}

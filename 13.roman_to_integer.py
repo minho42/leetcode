@@ -1,6 +1,12 @@
 # https://leetcode.com/problems/roman-to-integer/description/
 
 
+# Topics
+# Hash Table
+# Math
+# String
+
+
 class Solution:
     def romanToInt(self, s: str) -> int:
         # going backwards, if current symbol is smaller than prev, subtract, otherwise add

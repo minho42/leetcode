@@ -1,6 +1,12 @@
 # https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/
 
 
+# Topics
+# Math
+# String
+# Greedy
+
+
 class Solution:
     def minimumPushes(self, word: str) -> int:
         s = set(sorted(word, key=lambda k: word.count(k), reverse=True))

@@ -11,6 +11,11 @@
 # Output: ""
 # Explanation: There is no common prefix among the input strings.
 
+# Topics
+# String
+# Trie
+
+
 from typing import List
 
 

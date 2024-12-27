@@ -13,6 +13,10 @@
 # Output: 0.25000
 # Explanation: 2-2 = 1/22 = 1/4 = 0.25
 
+# Topics
+# Math
+# Recursion
+
 
 def myPow(x: float, n: int) -> float:
     return x**n

@@ -8,6 +8,10 @@
 # Input: height = [1,1]
 # Output: 1
 
+# Topics
+# Array T
+# wo Pointers
+# Greedy
 
 from typing import List
 

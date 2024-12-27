@@ -8,6 +8,11 @@
 # Input: num1 = "123", num2 = "456"
 # Output: "56088"
 
+# Topics
+# Math
+# String
+# Simulation
+
 
 def multiply(num1: str, num2: str) -> str:
     return str(int(num1) * int(num2))
