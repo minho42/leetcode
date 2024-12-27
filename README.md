@@ -1,4 +1,4 @@
-21 solved
+22 solved
 
 1.two_sum [go, py]  
 2.add_two_numbers [py]  
@@ -15,6 +15,7 @@
 41.first_missing_positive [py]  
 43.multiply_strings [py]  
 50.pow(x,n) [py]  
+75.sort_colors [py]  
 78.subsets [go, js, py]  
 90.subsets_II [py]  
 148.sort_list [py]  
