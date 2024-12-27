@@ -1,4 +1,4 @@
-19 solved
+20 solved
 
 1.two_sum [go, py]  
 2.add_two_numbers [py]  
@@ -9,6 +9,7 @@
 14.longest_common_prefix [py]  
 17.letter_combinations_of_a_phone_number [js, py]  
 20.valid_parentheses [go, py]  
+21.merge_two_sorted_lists [py]  
 22.generate_parentheses [go, js, py]  
 32.longest_valid_parentheses [go, py]  
 41.first_missing_positive [py]  
