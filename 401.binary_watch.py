@@ -16,33 +16,21 @@ class Solution:
         r = []
 
         hms = [
-            "h3",
+            "h8",
+            "h4",
             "h2",
             "h1",
-            "h0",
-            "m5,",
-            "m4,",
-            "m3",
+            "m32",
+            "m16",
+            "m8",
+            "m4",
             "m2",
             "m1",
-            "m0",
         ]
 
         def convert_to_time_str(arr: List[str]) -> str | None:
-            # arr: ["h0", "m1"]
-            # "h0" => "1:00" (2 ** 0 => 1)
-            # "m1" => "0:02" (2 ** 1 => 2)
-            # return "1:02"
-
-            if len(arr) != turnedOn:
-                return None
-            h = 0
-            m = 0
-            for a in arr:
-                if a[0] == "h":
-                    h += 2 ** int(a[1])
-                else:
-                    m += 2 ** int(a[1])
+            h = sum([(int(a[1:])) for a in arr if a[0] == "h"])
+            m = sum([(int(a[1:])) for a in arr if a[0] == "m"])
 
             if h > 11 or m > 59:
                 return None
